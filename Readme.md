@@ -25,15 +25,26 @@
         <td></td>
     </tr>
     <tr>
-        <td rowspan=2>指令语法</td>
+        <td rowspan=3>指令语法</td>
         <td>[v-bind]:href = ' js 表达式 '</td>
-        <td>解析标签属性</td>
+        <td rowspan=2>解析标签属性</td>
         <td></td>
     </tr>
     <tr>
         <td>v-model[:href] = ' js 表达式 '</td>
-        <td>解析标签属性，双向绑定</td>
-        <td>只能用于表单类元素上</td>
+        <td>只能用于表单类元素上，双向绑定</td>
+    </tr>
+    <tr>
+        <td>[v-on:/@]xxx = 'demo($event, values)'</td>
+        <td>事件处理</td>
+        <td>事件修饰符: 
+        <br/> .prevent 阻止默认事件
+        <br/> .stop 阻止冒泡
+        <br/> .once 事件只发生一次
+        <br/> .capture 使用事件的捕获模式
+        <br/> .self 只有是当前操作的元素时才会触发事件
+        <br/> .passive 事件的默认行为立刻执行，无需等待事件回调执行完毕
+        </td>
     </tr>
 </table>  
 
@@ -51,7 +62,10 @@ const vm = new Vue({
 vm.$mount('#root') // 挂载
 ```
 
+**D. 杂项**
 
+    -> MVVM 模型
+    -> 数据代理：通过一个对象代理对另一个对象中属性的操作（读/写）
 
 
 

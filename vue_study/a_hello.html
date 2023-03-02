@@ -4,11 +4,18 @@
         <meta charset="UTF-8" />
         <title>Hello</title>
         <script type="text/javascript" src="../vue.js"></script>
+        <style>
+            * {
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body>
         <div id="root">
-            <a :href="website">{{say_title + 'Vue!'}}</a> <br/>
-            <input v-model="input_value"/>
+            <div @click="showInfo">
+                <a :href="website" @click.prevent.stop='showInfo(32, $event)'>{{say_title + 'Vue!'}}</a>
+            </div>
+            <input v-model="input_value"/> <br/>
         </div>
 
         <script type="text/javascript">
@@ -21,6 +28,27 @@
                         input_value: '请输入',
                     }
                 },
+                methods: {
+                    showInfo(value, e) {
+                        alert(e)
+                    } 
+                }
+            })
+
+            // 在 Vue 中的应用参见源码解析
+            let age_number = 20
+            let person = {name: 'person_name', sex: 0}
+            Object.defineProperty(person, 'age', {
+                // value: 20, // 不可枚举，不可修改，不可删除
+                // enumerable: true, // 控制属性是否能枚举
+                // writable: true, // 控制属性是否能被修改
+                // configurable: true, // 控制属性是否能删除
+                get() { // 读取 age 值时调用
+                    return age_number
+                },
+                set(value) { // 设置 age 值时调用
+                    age_number = value
+                }
             })
         </script>
     </body>
