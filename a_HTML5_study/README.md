@@ -19,7 +19,7 @@
         <td>属性名称</td>
     </tr>
     <tr>
-        <td>!DOCTYPE</td>
+        <td>&lt;!DOCTYPE&gt;</td>
         <td>定义文档类型</td>
         <td>告知浏览器页面使用了哪种 HTML 版本</td>
         <td></td>
@@ -27,7 +27,7 @@
         <td></td>
     </tr>
     <tr>
-        <td rowspan=2>html</td>
+        <td rowspan=2>&lt;html&gt;</td>
         <td rowspan=2>定义一个 HTML 文档</td>
         <td rowspan=2>告知浏览器这是一个 HTML 文档</td>
         <td><font color='green'>manifest</font></td>
@@ -48,7 +48,7 @@
         <td></td>
     </tr>
     <tr>
-        <td rowspan=6>body</td>
+        <td rowspan=6>&lt;body&gt;</td>
         <td rowspan=6>定义文档的主体</td>
         <td rowspan=6></td>
         <td><font color='red'>alink</font></td>
@@ -81,7 +81,7 @@
         <td>规定文档中已被访问链接的颜色</td>
     </tr>
     <tr>
-        <td>h1 to h6</td>
+        <td>&lt;h1 to h6&gt;</td>
         <td>定义 HTML 标题</td>
         <td></td>
         <td><font color='red'>align</font></td>
@@ -89,7 +89,7 @@
         <td>规定标题中文本的排列</td>
     </tr>
     <tr>
-        <td>p</td>
+        <td>&lt;p&gt;</td>
         <td>定义一个段落</td>
         <td>自动在其前后创建一些空白</td>
         <td><font color='red'>align</font></td>
@@ -97,7 +97,7 @@
         <td>规定标题中文本的排列</td>
     </tr>
     <tr>
-        <td>br</td>
+        <td>&lt;br&gt;</td>
         <td>定义简单的换行</td>
         <td></td>
         <td></td>
@@ -105,7 +105,7 @@
         <td></td>
     </tr>
     <tr>
-        <td rowspan="4">hr</td>
+        <td rowspan="4">&lt;hr&gt;</td>
         <td rowspan="4">定义水平线</td>
         <td rowspan="4"></td>
         <td><font color="red">align</font></td>
@@ -128,7 +128,7 @@
         <td>宽度</td>
     </tr>
     <tr>
-        <td>略</td>
+        <td>&lt;!----&gt;</td>
         <td>注释</td>
         <td></td>
         <td></td>
@@ -137,7 +137,7 @@
     </tr>
 </table>
 
-
+<p>2. 格式</p>
 
 
 
